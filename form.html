@@ -28,13 +28,18 @@
             <nav>
                 <ul>
                     <li><a href="index.html">ホーム</a></li>
-                    <li class="dropdown dropbtn">メニュー
+                    <!-- <li class="dropdown dropbtn">メニュー
                         <div class="dropdown-content">
                             <a href="drink.html">ドリンク</a>
                             <a href="food.html">フード</a>
                         </div>
+                    </li> -->
+                    <li class="dropdown dropbtn" onclick="toggleDropdown()">メニュー
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="drink.html">ドリンク</a>
+                            <a href="food.html">フード</a>
+                        </div>
                     </li>
-                    <!-- <li><a href="index.html">お食事</a></li> -->
                     <li><a href="access.html">アクセス</a></li>
                     <li><a href="form.html">お問い合わせ</a></li>
                 </ul>
@@ -52,12 +57,12 @@
                         <img src="./img/logo.png" alt="logo" >
                     </div>
                     <div class="flex02__item">
-                        <p class="footer_text">【お問い合わせ】</p>
-                        <h3 class="footer_tel"><a href="tel:03-123-4567">TEL:03-123-4567</a></h3>
+                        <p class="footer_text">【電話番号】</p>
+                        <h3 class="footer_tel"><a href="tel:047-362-7740">TEL:047-362-7740</a></h3>
                         <p class="footer_text">【営業時間】</p>
-                        <p class="footer_text">火曜日～日曜日 7:00-20:00</p>
+                        <p class="footer_text">月曜日～日曜日 8:00-20:00</p>
                         <p class="footer_text">【定休日】</p>
-                        <p class="footer_text">月曜日</p>
+                        <p class="footer_text">不定休</p>
                     </div>
                     <div class="flex03__item">
                         <a href="https://www.instagram.com/coffeehiyoshi/"><img src="img/instagram.png" alt="instagram"></a>
@@ -65,9 +70,11 @@
                     </div>
                     <p class="footer_small"><small>&copy;コーヒーヒヨシ</small></p>
                 </div>
+                <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
             </footer>
     </div>  
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/box.js"></script>
+    <script src="js/shu.js"></script>
 </body>
 </html>

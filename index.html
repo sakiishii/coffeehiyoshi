@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo.png" type="コーヒーヒヨシのロゴ">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <!-- フォント -->
@@ -18,19 +18,20 @@
 </head>
 <body>
     <div id="shutter"></div>
+    
     <div class="wapper wrap">
         <header>
                 <h1><a href="index.html"><img src="img/logo.png" alt="コーヒーヒヨシのロゴ"></a></h1>
                 <nav>
                     <ul>
                         <li><a href="index.html">ホーム</a></li>
-                        <li class="dropdown dropbtn">メニュー
-                            <div class="dropdown-content">
+                        <li class="dropdown dropbtn" onclick="toggleDropdown()">メニュー
+                            <div id="myDropdown" class="dropdown-content">
                                 <a href="drink.html">ドリンク</a>
                                 <a href="food.html">フード</a>
                             </div>
                         </li>
-                        <!-- <li><a href="index.html">お食事</a></li> -->
+
                         <li><a href="access.html">アクセス</a></li>
                         <li><a href="form.html">お問い合わせ</a></li>                   
                      </ul>
